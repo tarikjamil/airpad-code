@@ -84,46 +84,36 @@ $("[animation=fade]").each(function (index) {
   );
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  let splide = new Splide(".is--home-numbers", {
-    type: "slide",
-    perPage: 1,
-    perMove: 1,
-    gap: "24rem",
-    arrows: false,
-    pagination: false,
-    breakpoints: {
-      991: {
-        // Tablet
-        gap: "24rem",
-        pagination: true,
-      },
-    },
-  });
-  splide.mount();
-});
-
 $(document).ready(function () {
   var $navbar = $(".navbar");
   var $reserveBtn = $(".reserve--btn");
   var $hamburgerWrapper = $(".hamburger-wrapper");
 
-  function checkBothClickedTwice() {
+  function checkBothClickedOnce() {
     return (
-      $reserveBtn.data("clicked") == 2 && $hamburgerWrapper.data("clicked") == 2
+      $reserveBtn.data("clicked") == 1 && $hamburgerWrapper.data("clicked") == 1
     );
   }
 
   function handleClick($element) {
-    // Increment or initialize the click count
     var count = $element.data("clicked") || 0;
+
+    // If it's the second click on the same element and both haven't been clicked once
+    if (count == 1 && !checkBothClickedOnce()) {
+      $navbar.removeClass("is--active");
+      $element.data("clicked", 0);
+      return;
+    }
+
+    // Otherwise, increment or initialize the click count
     $element.data("clicked", count + 1);
 
     if ($element.data("clicked") == 1) {
       $navbar.addClass("is--active");
-    } else if ($element.data("clicked") == 2 && checkBothClickedTwice()) {
-      $navbar.removeClass("is--active");
-      // Reset both click counts
+    }
+
+    if (checkBothClickedOnce()) {
+      // Reset both click counts when both are clicked once
       $reserveBtn.data("clicked", 0);
       $hamburgerWrapper.data("clicked", 0);
     }
