@@ -25,3 +25,11 @@
   background-color: black;
   color: white;
 }
+
+.home--accordion-trigger.open .icon-12 {
+  transform: rotate(180deg);
+}
+
+.home--accordion--response {
+  height: 0px;
+}
