@@ -1,0 +1,22 @@
+.main-wrapper {
+  opacity: 0;
+}
+
+.splide {
+  outline: none;
+  position: relative;
+  visibility: visible;
+}
+
+.splide__track {
+  overflow: visible;
+}
+
+.splide__slide {
+  align-self: stretch;
+}
+
+.w-richtext figure.w-richtext-align-fullwidth > div {
+  padding-bottom: inherit;
+  display: block;
+}
