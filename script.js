@@ -102,3 +102,38 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   splide.mount();
 });
+
+$(document).ready(function () {
+  var $navbar = $(".navbar");
+  var $reserveBtn = $(".reserve--btn");
+  var $hamburgerWrapper = $(".hamburger-wrapper");
+
+  function checkBothClickedTwice() {
+    return (
+      $reserveBtn.data("clicked") == 2 && $hamburgerWrapper.data("clicked") == 2
+    );
+  }
+
+  function handleClick($element) {
+    // Increment or initialize the click count
+    var count = $element.data("clicked") || 0;
+    $element.data("clicked", count + 1);
+
+    if ($element.data("clicked") == 1) {
+      $navbar.addClass("is--active");
+    } else if ($element.data("clicked") == 2 && checkBothClickedTwice()) {
+      $navbar.removeClass("is--active");
+      // Reset both click counts
+      $reserveBtn.data("clicked", 0);
+      $hamburgerWrapper.data("clicked", 0);
+    }
+  }
+
+  $reserveBtn.on("click", function () {
+    handleClick($(this));
+  });
+
+  $hamburgerWrapper.on("click", function () {
+    handleClick($(this));
+  });
+});

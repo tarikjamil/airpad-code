@@ -20,3 +20,8 @@
   padding-bottom: inherit;
   display: block;
 }
+
+.navbar.is--active {
+  background-color: black;
+  color: white;
+}
