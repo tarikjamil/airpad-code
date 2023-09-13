@@ -89,41 +89,39 @@ $(document).ready(function () {
   var $reserveBtn = $(".reserve--btn");
   var $hamburgerWrapper = $(".hamburger-wrapper");
 
-  function checkBothClickedOnce() {
-    return (
-      $reserveBtn.data("clicked") == 1 && $hamburgerWrapper.data("clicked") == 1
-    );
-  }
-
-  function handleClick($element) {
+  function handleClick($element, $otherElement) {
     var count = $element.data("clicked") || 0;
 
-    // If it's the second click on the same element and both haven't been clicked once
-    if (count == 1 && !checkBothClickedOnce()) {
-      $navbar.removeClass("is--active");
-      $element.data("clicked", 0);
-      return;
-    }
+    // Increment or initialize the click count
+    count += 1;
+    $element.data("clicked", count);
 
-    // Otherwise, increment or initialize the click count
-    $element.data("clicked", count + 1);
+    // Check if the other button was clicked
+    var otherClicked = $otherElement.data("clicked") || 0;
 
-    if ($element.data("clicked") == 1) {
+    if (count == 1) {
       $navbar.addClass("is--active");
-    }
-
-    if (checkBothClickedOnce()) {
-      // Reset both click counts when both are clicked once
+    } else if (count == 2) {
+      // If the other button was clicked once and this one is clicked twice, just reset the clicked element.
+      if (otherClicked == 1) {
+        $element.data("clicked", 0);
+      } else {
+        $navbar.removeClass("is--active");
+        $element.data("clicked", 0);
+      }
+    } else if (count == 2 && otherClicked == 2) {
+      // If both elements are clicked twice
+      $navbar.removeClass("is--active");
       $reserveBtn.data("clicked", 0);
       $hamburgerWrapper.data("clicked", 0);
     }
   }
 
   $reserveBtn.on("click", function () {
-    handleClick($(this));
+    handleClick($(this), $hamburgerWrapper);
   });
 
   $hamburgerWrapper.on("click", function () {
-    handleClick($(this));
+    handleClick($(this), $reserveBtn);
   });
 });
