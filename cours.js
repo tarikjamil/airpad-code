@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Select all .tennis-ball elements
+window.onload = function () {
+  // Put your ScrollTrigger initialization code here
   let balls = document.querySelectorAll(".tennis-ball");
 
   // Animate based on the given nth-child
@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
       y: movement + "vw",
       scrollTrigger: {
         trigger: ball,
-        start: "top bottom", // when the top of the ball hits the bottom of the viewport
-        end: "bottom top", // when the bottom of the ball hits the top of the viewport
-        scrub: true, // enables the scrubbing effect
-        markers: true, // enables the markers
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+        markers: true,
       },
     });
   });
-});
+};
