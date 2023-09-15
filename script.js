@@ -24,7 +24,7 @@ function pageLoad() {
       duration: 1,
     },
     "loadingAnimationsStart"
-  ); // <-- position parameter set to the label
+  );
 
   // Add the 'loading-reverse' animation and set its position to the label
   tl.from(
@@ -37,10 +37,48 @@ function pageLoad() {
       duration: 1,
     },
     "loadingAnimationsStart"
-  ); // <-- position parameter set to the label
+  );
 }
 
 pageLoad();
+
+window.onload = function () {
+  // Animation for .tennis-ball elements
+  let balls = document.querySelectorAll(".tennis-ball");
+  balls.forEach((ball, index) => {
+    let movement = 0;
+    switch ((index + 1) % 4) {
+      case 1:
+        movement = 5;
+        break;
+      case 2:
+        movement = -6;
+        break;
+      case 3:
+        movement = 8;
+        break;
+      case 0:
+        movement = -10;
+        break;
+    }
+
+    gsap.to(ball, {
+      y: movement + "vw",
+      scrollTrigger: {
+        trigger: ball,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+        markers: true,
+      },
+    });
+  });
+
+  // Refresh ScrollTrigger after 1 second
+  setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 1000);
+};
 
 $(document).ready(function () {
   var $navbar = $(".navbar");
