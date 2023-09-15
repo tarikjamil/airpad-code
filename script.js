@@ -21,30 +21,6 @@ function pageLoad() {
   );
 }
 
-function scrollFadeAnimation(selector) {
-  $(selector).each(function () {
-    let target = $(this);
-    gsap.from(target, {
-      y: "20rem",
-      opacity: 0,
-      ease: "Quint.easeOut",
-      duration: 1,
-      scrollTrigger: {
-        trigger: target,
-        start: "top bottom -=200",
-        // markers: true // Uncomment for debugging
-      },
-    });
-  });
-}
-
-// On Document Ready
-$(document).ready(function () {
-  pageLoad();
-  scrollFadeAnimation("[animation=fade-overflow]");
-  scrollFadeAnimation("[animation=fade]");
-});
-
 $(document).ready(function () {
   var $navbar = $(".navbar");
   var $reserveBtn = $(".reserve--btn");
