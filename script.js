@@ -8,29 +8,17 @@ function pageLoad() {
     opacity: 1,
     ease: "Quint.easeOut",
     duration: 0.5,
-  })
-    .from(
-      "[animation=loading]",
-      {
-        y: "20rem",
-        opacity: 0,
-        stagger: { each: 0.1, from: "start" },
-        ease: "Quint.easeOut",
-        duration: 1,
-      },
-      "loadingAnimationsStart"
-    )
-    .from(
-      "[animation=loading-reverse]",
-      {
-        y: "-20rem",
-        opacity: 0,
-        stagger: { each: 0.1, from: "start" },
-        ease: "Quint.easeOut",
-        duration: 1,
-      },
-      "loadingAnimationsStart"
-    );
+  }).from(
+    "[animation=loading]",
+    {
+      y: "20rem",
+      opacity: 0,
+      stagger: { each: 0.1, from: "start" },
+      ease: "Quint.easeOut",
+      duration: 1,
+    },
+    "loadingAnimationsStart"
+  );
 }
 
 function scrollFadeAnimation(selector) {
