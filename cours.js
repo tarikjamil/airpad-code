@@ -25,13 +25,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Create the animation with GSAP and ScrollTrigger
     gsap.to(ball, {
-      y: movement + "rem",
+      y: movement + "vw",
       scrollTrigger: {
         trigger: ball,
         start: "top bottom", // when the top of the ball hits the bottom of the viewport
         end: "bottom top", // when the bottom of the ball hits the top of the viewport
         scrub: true, // enables the scrubbing effect
-        markers: true,
       },
     });
   });
