@@ -149,7 +149,7 @@ $(".home--accordion-trigger").on("click", function () {
 });
 
 // marquee is--scrolling
-const scrollSpeed = 75; // pixels per second, adjust as needed
+const scrollSpeed = 40; // pixels per second, adjust as needed
 
 function updateScrollingSpeed() {
   document.querySelectorAll(".is--scrolling-js").forEach((element) => {
