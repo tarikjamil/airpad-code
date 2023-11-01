@@ -33,3 +33,20 @@
 .home--accordion--response {
   height: 0px;
 }
+
+.is--scrolling-js {
+  white-space: nowrap;
+  will-change: transform;
+  animation-name: is--scrolling-js;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes is--scrolling-js {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-1 * var(--scroll-width)));
+  }
+}
