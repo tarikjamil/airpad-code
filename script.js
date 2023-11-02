@@ -148,6 +148,34 @@ $(".home--accordion-trigger").on("click", function () {
   $(this).toggleClass("open");
 });
 
+// faq toggle animation --------------------- //
+$(".button.is--faq").on("click", function () {
+  // Save the .faq-wrapper.is--second div which needs to be animated
+  let faqSecondWrapper = $(".faq-wrapper.is--second");
+  let animationDuration = 500;
+
+  if (faqSecondWrapper.height() === 0) {
+    // If the height is 0, we want to animate it to 'auto'
+
+    // Temporarily set height to auto to calculate the height it should have
+    faqSecondWrapper.css("height", "auto");
+    let autoHeight = faqSecondWrapper.height(); // Get the natural height
+
+    // Set height back to 0 then animate to the autoHeight
+    faqSecondWrapper.height(0);
+    faqSecondWrapper.animate(
+      { height: autoHeight },
+      animationDuration,
+      function () {
+        faqSecondWrapper.css("height", "auto"); // Reset to auto for responsive behavior
+      }
+    );
+  } else {
+    // If the height is not 0, we want to animate it back to 0
+    faqSecondWrapper.animate({ height: "0" }, animationDuration);
+  }
+});
+
 // marquee is--scrolling
 const scrollSpeed = 40; // pixels per second, adjust as needed
 
