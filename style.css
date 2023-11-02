@@ -34,6 +34,10 @@
   height: 0px;
 }
 
+.faq-wrapper.is--second {
+  height: 0px;
+}
+
 .is--scrolling-js {
   white-space: nowrap;
   will-change: transform;
