@@ -194,3 +194,37 @@ updateScrollingSpeed();
 
 // Update on window resize
 window.addEventListener("resize", updateScrollingSpeed);
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Event listener for French link
+  document.getElementById("link-fr").addEventListener("click", function (e) {
+    e.preventDefault();
+    changeLanguage("");
+  });
+
+  // Event listener for English link
+  document.getElementById("link-en").addEventListener("click", function (e) {
+    e.preventDefault();
+    changeLanguage("en");
+  });
+
+  // Event listener for German link
+  document.getElementById("link-de").addEventListener("click", function (e) {
+    e.preventDefault();
+    changeLanguage("de");
+  });
+
+  function changeLanguage(lang) {
+    var path = window.location.pathname;
+
+    // Logic to construct the new URL based on the current path and selected language
+    var newPath = path.split("/").filter(Boolean);
+    if (["en", "de", "fr"].includes(newPath[0])) {
+      newPath.shift();
+    }
+    newPath = "/" + lang + (lang ? "/" : "") + newPath.join("/");
+
+    // Redirecting to the new URL
+    window.location.href = window.location.origin + newPath;
+  }
+});
