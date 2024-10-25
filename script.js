@@ -224,6 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     newPath = "/" + lang + (lang ? "/" : "") + newPath.join("/");
 
+    
     // Redirecting to the new URL
     window.location.href = window.location.origin + newPath;
   }
