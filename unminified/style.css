@@ -1,0 +1,56 @@
+.main-wrapper {
+  opacity: 0;
+}
+
+.splide {
+  outline: none;
+  position: relative;
+  visibility: visible;
+}
+
+.splide__track {
+  overflow: visible;
+}
+
+.splide__slide {
+  align-self: stretch;
+}
+
+.w-richtext figure.w-richtext-align-fullwidth > div {
+  padding-bottom: inherit;
+  display: block;
+}
+
+.navbar.is--active {
+  background-color: black;
+  color: white;
+}
+
+.home--accordion-trigger.open .icon-12 {
+  transform: rotate(180deg);
+}
+
+.home--accordion--response {
+  height: 0px;
+}
+
+.faq-wrapper.is--second {
+  height: 0px;
+}
+
+.is--scrolling-js {
+  white-space: nowrap;
+  will-change: transform;
+  animation-name: is--scrolling-js;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes is--scrolling-js {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-1 * var(--scroll-width)));
+  }
+}
