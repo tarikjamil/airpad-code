@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://www.airpad.ch</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de" />
+    </url>
+    <url>
+        <loc>
+            https://www.airpad.ch/search
+        </loc>
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/airpad</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/airpad" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/airpad" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/airpad" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/camps</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/camps" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/camps" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/camps" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/entreprises</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/entreprises" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/entreprises" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/entreprises" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/events</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/events" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/events" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/events" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/tournois</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/tournois" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/tournois" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/tournois" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/cours</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/cours" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/cours" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/cours" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/en/airpad</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/airpad" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/airpad" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/airpad" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/en/camps</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/camps" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/camps" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/camps" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/en/entreprises</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/entreprises" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/entreprises" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/entreprises" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/en/events</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/events" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/events" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/events" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/en/tournois</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/tournois" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/tournois" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/tournois" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/en/cours</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/cours" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/cours" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/cours" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/en/conditions</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/conditions" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/conditions" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/conditions" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/en</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/de/airpad</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/airpad" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/airpad" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/airpad" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/de/camps</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/camps" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/camps" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/camps" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/de/entreprises</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/entreprises" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/entreprises" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/entreprises" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/de/events</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/events" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/events" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/events" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/de/tournois</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/tournois" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/tournois" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/tournois" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/de/cours</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/cours" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/cours" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/cours" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/de/conditions</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/conditions" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/conditions" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/conditions" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/de</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de" />
+    </url>
+    <url>
+        <loc>https://www.airpad.ch/conditions</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.airpad.ch/conditions" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.airpad.ch/en/conditions" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.airpad.ch/de/conditions" />
+    </url>
+    <url>
+        <loc>
+            https://www.airpad.ch/politique-de-confidentialite
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://www.airpad.ch/sitemap
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://www.airpad.ch/news/flavio-fioriti-interview
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://www.airpad.ch/news/jose-carlos-interview
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://www.airpad.ch/news/matthieu-amgwerd-interview
+        </loc>
+    </url>
+</urlset>
